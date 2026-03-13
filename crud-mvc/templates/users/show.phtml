@@ -1,0 +1,10 @@
+<main>
+    <h1>Détails de l'utilisateur</h1>
+    <h2><?= $data["user"]->getFirstName()." ".$data["user"]->getLastName()?></h2>
+    <p><?=$data["user"]->getEmail()?></p>
+    <ul>
+        <li><a href="index.php">Revenir à la liste</a></li>
+        <li><a href="index.php?route=update_user&user_id=<?=$data["user"]->getId()?>">Modifier l'utilisateur</a></li>
+        <li><a href="index.php?route=delete_user&user_id=<?=$data["user"]->getId()?>">Supprimer l'utilisateur</a></li>
+    </ul>
+</main>
